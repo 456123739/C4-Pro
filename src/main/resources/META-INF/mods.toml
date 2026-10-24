@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,48)"
+license="MIT"
+
+[[mods]]
+modId="qis4c4"
+version="${mod_version}"
+displayName="C4 Pro"
+license="MIT"
+authors="qisumei,nimshade"
+description='''
+C4 Pro —— 以 C4 炸弹为核心的小游戏模组。
+长按右键安装、剪刀/空手拆除、40 秒引信、全员音效与 HUD 提示、记分板状态同步。
+'''
+
+[[dependencies.qis4c4]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,48)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.qis4c4]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.20.2)"
+    ordering="NONE"
+    side="BOTH"

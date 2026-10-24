@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C4 Pro · Minecraft 1.20.1 Forge 下载站</title>
+<style>
+  :root {
+    --bg: #10131a;
+    --card: #171b24;
+    --line: #262c38;
+    --text: #e6e9ef;
+    --muted: #9aa4b2;
+    --accent: #ffb43a;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: radial-gradient(1200px 600px at 50% -200px, #1d2433 0%, var(--bg) 60%);
+    color: var(--text); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  header img { width: 72px; height: 72px; image-rendering: pixelated; }
+  h1 { margin: 0; font-size: 34px; letter-spacing: .5px; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--muted); margin-top: 4px; }
+  .badges { margin: 18px 0 30px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; font-size: 13px; color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin: 18px 0; }
+  h2 { font-size: 19px; margin: 0 0 14px; }
+  h3 { font-size: 15px; margin: 20px 0 6px; color: var(--accent); }
+  p, li { color: #cfd6e2; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px;
+    background: var(--accent); color: #191100; font-weight: 700; border: 0;
+  }
+  .btn:hover { text-decoration: none; filter: brightness(1.06); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); font-weight: 500; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13.5px; }
+  pre { background: #0d1016; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .ok { color: var(--green); font-weight: 700; }
+  .muted { color: var(--muted); font-size: 13px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="C4 Pro">
+    <div>
+      <h1>C4 <span>Pro</span></h1>
+      <div class="sub">Minecraft 1.20.1 · Forge · C4 炸弹小游戏机制</div>
+    </div>
+  </header>
+
+  <div class="badges">
+    <span class="badge">版本 1.7.0</span>
+    <span class="badge">Forge 47.x</span>
+    <span class="badge">客户端 + 服务端</span>
+    <span class="badge">MIT</span>
+  </div>
+
+  <div class="card">
+    <h2>下载</h2>
+    <div class="downloads">
+      <a class="btn" href="https://github.com/456123739/C4-Pro/releases/download/v1.7.0/qis4c4-1.7.0.jar">⬇ 下载 qis4c4-1.7.0.jar</a>
+      <a class="btn ghost" href="https://github.com/456123739/C4-Pro/releases">全部版本 / Releases</a>
+      <a class="btn ghost" href="https://github.com/456123739/C4-Pro">源码仓库</a>
+    </div>
+    <p class="muted" style="margin-top:16px">
+      安装：把 jar 放进 <code>mods/</code>。<b>客户端与服务端都要装</b>（模组带 HUD 与自定义音效）。
+      需要 Minecraft 1.20.1 + Forge 47.x，无其它依赖。
+    </p>
+    <p class="muted">SHA-256：<code>b71d7b65b018d958469a5f3e541f6a24cc627303b8dd119ef6d55ff62deb2810</code></p>
+  </div>
+
+  <div class="card">
+    <h2>1.7.0 修复了什么</h2>
+
+    <h3>1 · 滴滴声：警匪双方任何位置都能听见 <span class="ok">FIXED</span></h3>
+    <p>旧版用一次性 <code>playSound</code>（只有约 48 格内的玩家收得到），实体卸载时还会执行
+    <code>stopsound @a</code> 把所有人的倒计时音效掐断；C4 所在区块没玩家时引信还会停摆。</p>
+    <p>现在：声音由服务端<b>逐个玩家</b>广播（坐标取玩家自身位置，不会被距离衰减成 0），
+    节奏由服务端引信驱动、随时进服都能对上，安装后给区块加 <b>FORCED 票据</b>，无人值守也照常滴滴。</p>
+
+    <h3>2 · 安装后全员小字提示 <span class="ok">NEW</span></h3>
+    <p>下包瞬间，所有玩家屏幕上方显示小字“C4 已被安装”，拆除/爆炸同样有全员提示。</p>
+
+    <h3>3 · 拆除进度全员可见 <span class="ok">FIXED</span></h3>
+    <p>拆除进度改为实体同步字段，所有人都会看到“XXX 正在拆除 C4” + 进度条 + 百分比，不再只有拆除者自己能看见。</p>
+
+    <h3>4 · 拆除时允许被小幅度推动 <span class="ok">IMPROVED</span></h3>
+    <p>不再用方块坐标判断“是否移动”，而是按 <b>1 格水平容差</b> 判定：被队友/实体碰撞推一下不会中断，
+    真正走开才会中断。计时也从系统时钟改为服务端 tick。</p>
+  </div>
+
+  <div class="card">
+    <h2>玩法</h2>
+    <table>
+      <tr><th>操作</th><th>说明</th></tr>
+      <tr><td>安装</td><td>手持 C4 站在允许的方块上（默认 <code>minecraft:end_stone_bricks</code>），按住右键 3.5 秒</td></tr>
+      <tr><td>拆除</td><td>对准 C4，剪刀 5 秒 / 空手 10 秒，右键开始</td></tr>
+      <tr><td>引信</td><td>40 秒后爆炸，最后 20 / 10 / 4 秒有文字提醒</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>记分板联动</h2>
+    <pre>#C4 的 c4_condition : 0 空闲 / 1 已安装 / 2 已爆炸 / 3 已拆除
+#C4 的 p1score/p2score/p3score : C4 坐标 X/Y/Z
+/c4clear : 清除场上所有 C4（权限 2）</pre>
+  </div>
+
+  <div class="card">
+    <h2>校验与自检</h2>
+    <p class="muted">发布包在真实 Forge 专用服务器上跑过完整自检：安装 → 记分板 → 区块票据 → 滴滴声节奏 →
+    爆炸 → 剪刀拆除 → 推动容差 → 双人抢拆 → NBT → 真实 tick 推进。</p>
+    <pre>专用服务器自检（66 项全部 PASS）：
+java -Dqis4c4.selftest=true -Xmx2G @user_jvm_args.txt \
+     @libraries/net/minecraftforge/forge/1.20.1-47.4.16/unix_args.txt nogui
+
+开发环境：./gradlew runServer -Dqis4c4.selftest=true</pre>
+  </div>
+
+  <footer>
+    原始 C4 模组：qisumei · 重构与维护：nimshade · MIT License
+  </footer>
+</div>
+</body>
+</html>
