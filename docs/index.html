@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C4 Pro · Minecraft 1.20.1 Forge 下载站</title>
+<style>
+  :root {
+    --bg: #10131a;
+    --card: #171b24;
+    --line: #262c38;
+    --text: #e6e9ef;
+    --muted: #9aa4b2;
+    --accent: #ffb43a;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: radial-gradient(1200px 600px at 50% -200px, #1d2433 0%, var(--bg) 60%);
+    color: var(--text); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { display: flex; align-items: center; gap: 18px; }
+  header img { width: 72px; height: 72px; image-rendering: pixelated; }
+  h1 { margin: 0; font-size: 34px; letter-spacing: .5px; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--muted); margin-top: 4px; }
+  .badges { margin: 18px 0 30px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; font-size: 13px; color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin: 18px 0; }
+  h2 { font-size: 19px; margin: 0 0 14px; }
+  h3 { font-size: 15px; margin: 20px 0 6px; color: var(--accent); }
+  p, li { color: #cfd6e2; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px;
+    background: var(--accent); color: #191100; font-weight: 700; border: 0;
+  }
+  .btn:hover { text-decoration: none; filter: brightness(1.06); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); font-weight: 500; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13.5px; }
+  pre { background: #0d1016; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .ok { color: var(--green); font-weight: 700; }
+  .muted { color: var(--muted); font-size: 13px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="C4 Pro">
+    <div>
+      <h1>C4 <span>Pro</span></h1>
+      <div class="sub">Minecraft 1.20.1 · Forge · C4 炸弹小游戏机制</div>
+    </div>
+  </header>
+
+  <div class="badges">
+    <span class="badge">版本 1.7.4</span>
+    <span class="badge">Forge 47.x</span>
+    <span class="badge">客户端 + 服务端</span>
+    <span class="badge">MIT</span>
+  </div>
+
+  <div class="card">
+    <h2>下载</h2>
+    <div class="downloads">
+      <a class="btn" href="https://github.com/456123739/C4-Pro/releases/download/v1.7.4/qis4c4-1.7.4.jar">⬇ 下载 qis4c4-1.7.4.jar</a>
+      <a class="btn ghost" href="https://gh-proxy.com/https://github.com/456123739/C4-Pro/releases/download/v1.7.4/qis4c4-1.7.4.jar">🇨🇳 国内加速下载</a>
+      <a class="btn ghost" href="https://github.com/456123739/C4-Pro/releases">全部版本 / Releases</a>
+      <a class="btn ghost" href="https://github.com/456123739/C4-Pro">源码仓库</a>
+    </div>
+    <p class="muted" style="margin-top:16px">
+      安装：把 jar 放进 <code>mods/</code>。<b>客户端与服务端都要装</b>（模组带 HUD 与自定义音效）。
+      需要 Minecraft 1.20.1 + Forge 47.x，无其它依赖。
+    </p>
+    <p class="muted">SHA-256：<code>7eeff85ba8fb96701acd537ccfd00a7f0ada7141933f0a4b4614df85f029a7c6</code></p>
+  </div>
+
+  <div class="card">
+    <h2>1.7.4：队伍名读得对、认得出 <span class="ok">NEW</span></h2>
+    <ul class="fixes">
+      <li><b>配置规范化</b>：队伍名去首尾空格、去重；<code>[" terrorists "]</code> 等价于 <code>["terrorists"]</code>；显式 <code>""</code> = 允许无队伍玩家。</li>
+      <li><b>开服校验</b>：逐条检查配置里的队伍在记分板上是否存在，不存在/只差大小写都会 WARN 并列出当前队伍。</li>
+      <li><b><code>/c4roles</code></b>：两份名单逐条 ✔/✘，显示你的队伍与安装/拆除权限；控制台也能执行。</li>
+    </ul>
+
+    <h2>1.7.3 修复：音效回归原版 + 队伍身份不再串</h2>
+    <ul class="fixes">
+      <li><b>音效全部回到原版资源</b>：删掉自造的 <code>c4beep</code>，安装播放 <code>c4countdown</code>（40 秒整段，音量 3.0）+ <code>c4plant</code> 语音，滴答用原版 <code>block.note_block.hat</code>（1.5），节奏恢复原版公式。</li>
+      <li><b>队伍身份</b>：<code>allowed_install_teams</code>（匪）只能装、<code>allowed_defuse_teams</code>（警）只能拆；拆除队留空时安装队<b>依然不能拆</b>（修掉“匪自己拆自己的包”）。</li>
+      <li><b>排错</b>：启动日志打印生效名单，游戏内 <code>/c4roles</code> 打印名单 + 你的队伍 + 你的权限。</li>
+    </ul>
+
+    <h2>1.7.2 新增：掉在地上的 C4 会被标出来</h2>
+    <p>C4 被击杀掉落 / 掉出背包 / 按 Q 扔出后，原版只剩一个 32×32 的小贴图，掉进草丛基本等于消失。
+    现在只要有“掉落的 C4”，就会出现一块暗色小牌 + 红框 + <code>C4</code> 字样的悬浮标志，
+    下面一道细光柱指出落点；24 格内还会在小牌上方显示一行 <code>C4 24m</code> 的距离。</p>
+    <ul>
+      <li><b>隔墙可见</b>：被方块挡住只是变暗（约 62% 不透明度），仍然看得见“那边有 C4”；</li>
+      <li><b>距离自适应</b>：近处约 1.3 格高，远处放大到 2.3 倍并淡出，默认 64 格内可见；</li>
+      <li><b>出屏指引</b>：标志跑到屏幕外时，屏幕边缘出现红色小菱形 + 距离，指方向；</li>
+      <li><b>捡起即消失</b>：客户端盯的是掉落物实体本身，一捡起就没了，再掉一次又出现；</li>
+      <li><b>不给炸弹开透视</b>：只标“掉在地上的 C4 物品”，已安装的 C4 不会有标志，避免破坏平衡；</li>
+      <li><b>纯客户端</b>：不发数据包、不占服务端 tick，遮挡检测按实体 250ms 缓存。</li>
+    </ul>
+    <p class="muted">配置：<code>dropped_c4_marker = true</code>（开关）、<code>dropped_c4_marker_range = 64.0</code>（16–512 格）。</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+      <figure style="margin:0;flex:1 1 260px"><img src="img/marker_side.png" alt="11 格处的标记" style="width:100%;border-radius:10px;border:1px solid var(--line)"><figcaption class="muted" style="font-size:13px">约 11 格：小牌 + 光柱 + 距离</figcaption></figure>
+      <figure style="margin:0;flex:1 1 260px"><img src="img/marker_wall.png" alt="隔墙" style="width:100%;border-radius:10px;border:1px solid var(--line)"><figcaption class="muted" style="font-size:13px">隔墙：变暗但依然可见</figcaption></figure>
+      <figure style="margin:0;flex:1 1 260px"><img src="img/marker_far.png" alt="48 格" style="width:100%;border-radius:10px;border:1px solid var(--line)"><figcaption class="muted" style="font-size:13px">48 格：只剩红色小牌（24 格内才有距离字）</figcaption></figure>
+    </div>
+    <p class="muted" style="font-size:13px">（上图为离线成像预览：同一套参数 + 真实贴图在无 GUI 环境下的渲染，用于确认“明显但不突兀”。）</p>
+  </div>
+
+  <div class="card">
+    <h2>1.7.1 修复了什么</h2>
+
+    <h3>1 · <code>/kill</code> 与 <code>/c4clear</code> 清不掉 C4 <span class="ok">FIXED</span></h3>
+    <p>旧版 C4 不可伤害、不可摧毁，<code>/kill</code> 对它没用；<code>/c4clear</code> 又只看已加载实体，
+    藏在未加载区块里的 C4 清不到，玩家走近后还会复活继续倒计时。</p>
+    <p>现在：C4 会把自己的坐标记进维度存档；清场时对“坐标在、实体不在场上”的 C4 只写一条
+    <b>“死亡名单”</b>，<b>不加载区块、不每 tick 轮询</b>；该 C4 被加载出来的瞬间查表命中、当场自删，
+    一 tick 都不跑。清场开销与地图大小无关。</p>
+
+    <h3>2 · 提示 UI 改回复用模组原有的独立 UI <span class="ok">CHANGED</span></h3>
+    <p>删除 1.7.0 另写的 HUD，改回模组自带的 <code>ClientMessageRenderer</code>：
+    所有提示与进度都在<b>准心下方</b>一行，不挡准心、不挡视野。</p>
+
+    <h2>1.7.0 修复了什么</h2>
+
+    <h3>1 · 滴滴声：警匪双方任何位置都能听见 <span class="ok">FIXED</span></h3>
+    <p>旧版用一次性 <code>playSound</code>（只有约 48 格内的玩家收得到），实体卸载时还会执行
+    <code>stopsound @a</code> 把所有人的倒计时音效掐断；C4 所在区块没玩家时引信还会停摆。</p>
+    <p>现在：声音由服务端<b>逐个玩家</b>广播（坐标取玩家自身位置，不会被距离衰减成 0），
+    节奏由服务端引信驱动、随时进服都能对上，安装后给区块加 <b>FORCED 票据</b>，无人值守也照常滴滴。</p>
+
+    <h3>2 · 安装后全员小字提示 <span class="ok">NEW</span></h3>
+    <p>下包瞬间，所有玩家屏幕上方显示小字“C4 已被安装”，拆除/爆炸同样有全员提示。</p>
+
+    <h3>3 · 拆除进度全员可见 <span class="ok">FIXED</span></h3>
+    <p>拆除进度改为实体同步字段，所有人都会看到“XXX 正在拆除 C4” + 进度条 + 百分比，不再只有拆除者自己能看见。</p>
+
+    <h3>4 · 拆除时允许被小幅度推动 <span class="ok">IMPROVED</span></h3>
+    <p>不再用方块坐标判断“是否移动”，而是按 <b>1 格水平容差</b> 判定：被队友/实体碰撞推一下不会中断，
+    真正走开才会中断。计时也从系统时钟改为服务端 tick。</p>
+  </div>
+
+  <div class="card">
+    <h2>玩法</h2>
+    <table>
+      <tr><th>操作</th><th>说明</th></tr>
+      <tr><td>安装</td><td>手持 C4 站在允许的方块上（默认 <code>minecraft:end_stone_bricks</code>），按住右键 3.5 秒</td></tr>
+      <tr><td>拆除</td><td>对准 C4，剪刀 5 秒 / 空手 10 秒，右键开始</td></tr>
+      <tr><td>引信</td><td>40 秒后爆炸，最后 20 / 10 / 4 秒有文字提醒</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>记分板联动</h2>
+    <pre>#C4 的 c4_condition : 0 空闲 / 1 已安装 / 2 已爆炸 / 3 已拆除
+#C4 的 p1score/p2score/p3score : C4 坐标 X/Y/Z
+/c4clear : 清除场上所有 C4（权限 2）</pre>
+  </div>
+
+  <div class="card">
+    <h2>校验与自检</h2>
+    <p class="muted">发布包在真实 Forge 专用服务器上跑过完整自检：安装 → 记分板 → 区块票据 → 滴滴声节奏 →
+    爆炸 → 剪刀拆除 → 推动容差 → 双人抢拆 → NBT → 真实 tick 推进 →
+    <code>/kill</code> 与 <code>/c4clear</code>（含未加载区块的“死亡名单”）→ 掉落 C4 的定位与捡起。</p>
+    <pre>专用服务器自检（147 项全部 PASS）：
+java -Dqis4c4.selftest=true -Xmx2G @user_jvm_args.txt \
+     @libraries/net/minecraftforge/forge/1.20.1-47.4.16/unix_args.txt nogui
+
+开发环境：./gradlew runServer -Dqis4c4.selftest=true</pre>
+  </div>
+
+  <footer>
+    原始 C4 模组：qisumei · 重构与维护：nimshade · MIT License
+  </footer>
+</div>
+</body>
+</html>
