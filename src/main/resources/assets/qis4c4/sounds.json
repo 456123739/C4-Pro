@@ -1,0 +1,432 @@
+{
+  "tw": {
+    "sounds": [
+      {
+        "name": "qis4c4:tw",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.tw"
+  },
+  "ctw": {
+    "sounds": [
+      {
+        "name": "qis4c4:ctw",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.ctw"
+  },
+  "c4plant": {
+    "sounds": [
+      {
+        "name": "qis4c4:c4plant",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4plant"
+  },
+  "c4countdown": {
+    "sounds": [
+      {
+        "name": "qis4c4:c4countdown",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_00": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_00",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_01": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_01",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_02": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_02",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_03": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_03",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_04": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_04",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_05": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_05",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_06": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_06",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_07": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_07",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_08": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_08",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_09": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_09",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_10": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_10",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_11": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_11",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_12": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_12",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_13": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_13",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_14": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_14",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_15": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_15",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_16": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_16",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_17": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_17",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_18": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_18",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_19": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_19",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_20": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_20",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_21": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_21",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_22": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_22",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_23": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_23",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_24": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_24",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_25": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_25",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_26": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_26",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_27": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_27",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_28": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_28",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_29": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_29",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_30": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_30",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_31": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_31",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_32": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_32",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_33": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_33",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_34": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_34",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_35": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_35",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_36": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_36",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_37": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_37",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  },
+  "cd_38": {
+    "sounds": [
+      {
+        "name": "qis4c4:cd/cd_38",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.qis4c4.c4countdown"
+  }
+}
